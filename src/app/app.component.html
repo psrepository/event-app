@@ -1,0 +1,13 @@
+
+<div class="container">
+    <br/>
+    <h3 class="text-primary text-center">Welcome to {{title}}</h3>
+    <ag-grid-angular 
+        style="width: 900px; height: 250px;" 
+        class="ag-theme-balham"
+        [columnDefs]="columnDefs"
+        [gridOptions]="gridOptions"
+        (gridReady)="onGridReady($event)"
+    >
+    </ag-grid-angular>
+</div>
